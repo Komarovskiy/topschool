@@ -1,0 +1,43 @@
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #000000;
+* {
+    box-sizing: border-box;
+}
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: coral;
+}
+p {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $primary-color;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.header {
+    padding: 18px 0;
+    background: #fff;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__items {
+    display: flex;
+    align-items: center;
+}
+.header__authorization {
+    display: flex;
+    align-items: center;
+}
+.header-link__text {
+    margin-right: 20px;
+    align-items: center;
+}
