@@ -17,17 +17,16 @@ a {
     color: $primary-color;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .header {
-    padding: 18px 0;
     background: #fff;
+    padding: 18px 0;
 }
 .header-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .header__items {
     display: flex;
@@ -38,6 +37,5 @@ a {
     align-items: center;
 }
 .header-link__text {
-    margin-right: 20px;
     align-items: center;
 }
