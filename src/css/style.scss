@@ -1,12 +1,13 @@
 $font-stack: 'Montserrat', sans-serif;
 $primary-color: #000000;
+$bg-color: #FFFFFF;
 * {
     box-sizing: border-box;
 }
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  background: coral;
+  background: $bg-color;
 }
 p {
     font-size: 16px;
@@ -21,7 +22,6 @@ a {
     margin: 0 auto;
 }
 .header {
-    background: #fff;
     padding: 18px 0;
 }
 .logo {
@@ -69,6 +69,7 @@ a {
 .page {
     width: 100%;
     height: 478px;
+    display: flex;
     background-image: url(../img/bg.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -76,21 +77,32 @@ a {
     z-index: 0;
 }
 .page__left {
-    width: 60%;
+    width: 55%;
     height: 100%;
     background: #00093C;
-    background-image: url(../img/bg-dots.png);
-    background-repeat: no-repeat;
-    background-position: 110% 55%;
-    
+}
+.page__bg {
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 35px;
+}
+.page__stripe {
+    position: absolute;
+    left: 43%;
+    margin-left: 5px;
+    margin-top: 215px;
 }
 .page__right {
-    width: 40%;
-    margin-right: 50%;
+    width: 45%;
     height: 100%;
-    background-image: url(../img/bg-vectors.png);
-    background-repeat: no-repeat;
+}
+.page__vectorx {
     position: absolute;
-    left: 2%;
-    top: 17%;
+    margin-left: 22%;
+    margin-top: 6%;
+}
+.page__uneven {
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 13%;
 }
