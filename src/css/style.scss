@@ -173,28 +173,3 @@ a {
     left: 36%;
     width: 50%;
 }
-.courses__buttons {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10%;
-    padding-left: 13%;
-}
-.courses-buttons__top {
-    display: flex;
-    margin-bottom: 20px;
-}
-.courses-buttons__link {
-    height: 50px;
-    text-align: justify;
-    background: #ffffff;
-    border-image: linear-gradient;
-    margin-right: 20px;
-    p {
-        width: 100%;
-        margin: 20px;
-    }
-}
-.courses-buttons__bottom {
-    display: flex;
-}
