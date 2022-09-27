@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html,
+body {
+  height: 100%;
+  background: #e6e6e6;
+}
+
+header {
+  background: #ffffff;
+}
+
+img {
+  display: inline;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow_down {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.menu {
+  margin: 44px 0;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.menu__list-item {
+  margin-left: 40px;
+}
+.menu button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.menu img {
+  margin-right: 6px;
+}/*# sourceMappingURL=style.css.map */
