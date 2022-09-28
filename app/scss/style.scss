@@ -12,6 +12,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    a {
+        color: #000;
+    }
 }
 .arrow_down {
     margin-top: 5px;
@@ -25,6 +28,9 @@ margin: 44px 0;
     }
     &__list-item {
         margin-left: 40px;
+    }
+    &__list-item p:hover {
+        text-decoration: underline;
     }
     button {
         display: flex;
@@ -40,9 +46,60 @@ margin: 44px 0;
 }
 
 
-
-
-
+.footer {
+    @extend %bg-blue;
+    color: #fff;
+    padding: 30px 0 56px 0;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        margin: 70px 86px 104px 0;
+    }
+    &__left-number {
+        display: block;
+        margin-top: 43px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &__left-city, &__left-mail {
+        display: block;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    &__social {
+        margin-top: 37px;
+        display: flex;
+        align-items: center;
+    }
+    &__social-item {
+        margin-right: 20px;
+    }
+    &__desc {
+        margin-top: 29px;
+        color: #BDBDBD;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &__right {
+        display: flex;
+    }
+    &__content {
+        margin-right: 60px
+    }
+    &__content-title {
+        @extend %title-font;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+    &__content-link {
+        display: block;
+        @extend %description;
+        margin-top: 16px;
+    }
+}
 // display: flex;
 //     flex-wrap: wrap;
 //     align-items: center;
