@@ -3,9 +3,11 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+
 .logo {
     margin-right: 20px;
 }
+
 .header {
     &__inner {
         display: flex;
@@ -16,19 +18,24 @@
         color: #000;
     }
 }
+
 .arrow_down {
     margin-top: 5px;
     margin-left: 10px;
 }
+
 .menu {
-margin: 44px 0;
+    margin: 44px 0;
+
     &__list {
         display: flex;
         align-items: center;
     }
+
     &__list-item {
         margin-left: 40px;
     }
+
     button {
         display: flex;
         flex-wrap: wrap;
@@ -37,22 +44,59 @@ margin: 44px 0;
         border: none;
         cursor: pointer;
     }
+
     img {
         margin-right: 6px;
     }
 }
-
-
+.dropdown {
+    background: #ffffff;
+    max-height: 400px;
+    position: absolute;
+    border-radius: 6px;
+    box-shadow: #FFF 0 -1px 4px, -1px 14px 29px 13px rgba(0,0,0,0.41);
+    transform: translateY(120%);
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        margin: 0 20px 29px 20px;
+    }
+    &__list-link {
+        display: inline-block;
+    }
+    &__title {
+        display: inline;
+        margin: 17px 0 25px 20px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__close {
+        cursor: pointer;
+        background: #ffffff;
+        border: none;
+        margin: 21px 21px 20px 820px;
+    }
+    &__list-link p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
 .footer {
     @extend %color-primary;
     color: #fff;
     padding: 30px 0 20px 0;
+
     &__inner {
         display: flex;
     }
+
     &__left {
         margin: 70px 86px 56px 0;
     }
+
     &__left-number {
         display: block;
         margin-top: 43px;
@@ -60,19 +104,24 @@ margin: 44px 0;
         font-size: 18px;
         line-height: 26px;
     }
-    &__left-city, &__left-mail {
+
+    &__left-city,
+    &__left-mail {
         display: block;
         margin-top: 12px;
         font-size: 14px;
     }
+
     &__social {
         margin-top: 37px;
         display: flex;
         align-items: center;
     }
+
     &__social-item {
         margin-right: 20px;
     }
+
     &__desc {
         margin-top: 29px;
         color: #BDBDBD;
@@ -80,23 +129,28 @@ margin: 44px 0;
         font-size: 12px;
         line-height: 15px;
     }
+
     &__right {
         display: flex;
     }
+
     &__content {
-        margin-right: 60px
+        margin-right: 50px
     }
+
     &__content-title {
         @extend %title-font;
         line-height: 26px;
         margin-bottom: 5px;
     }
+
     &__content-link {
         display: inline-block;
         @extend %description;
         margin-top: 16px;
     }
 }
+
 // display: flex;
 //     flex-wrap: wrap;
 //     align-items: center;
