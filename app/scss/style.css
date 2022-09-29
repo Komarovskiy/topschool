@@ -151,13 +151,13 @@ img {
 
 .footer {
   color: #fff;
-  padding: 30px 0 56px 0;
+  padding: 30px 0 20px 0;
 }
 .footer__inner {
   display: flex;
 }
 .footer__left {
-  margin: 70px 86px 104px 0;
+  margin: 70px 86px 56px 0;
 }
 .footer__left-number {
   display: block;
