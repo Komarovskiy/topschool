@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer__content-title {
   font-size: 16px;
   font-weight: 700;
@@ -106,6 +107,44 @@ img {
   padding: 0 15px;
 }
 
+.border__black:hover {
+  position: relative;
+}
+
+.border__black:after {
+  display: block;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #000000; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.border__black:hover:after,
+.border__black:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.border__white:hover {
+  position: relative;
+}
+
+.border__white:after {
+  display: block;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #ffffff; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.border__white:hover:after,
+.border__white:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
 .logo {
   margin-right: 20px;
 }
@@ -133,9 +172,6 @@ img {
 }
 .menu__list-item {
   margin-left: 40px;
-}
-.menu__list-item p:hover {
-  text-decoration: underline;
 }
 .menu button {
   display: flex;
@@ -197,6 +233,6 @@ img {
   margin-bottom: 5px;
 }
 .footer__content-link {
-  display: block;
+  display: inline-block;
   margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

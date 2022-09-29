@@ -29,9 +29,6 @@ margin: 44px 0;
     &__list-item {
         margin-left: 40px;
     }
-    &__list-item p:hover {
-        text-decoration: underline;
-    }
     button {
         display: flex;
         flex-wrap: wrap;
@@ -47,7 +44,7 @@ margin: 44px 0;
 
 
 .footer {
-    @extend %bg-blue;
+    @extend %color-primary;
     color: #fff;
     padding: 30px 0 20px 0;
     &__inner {
@@ -95,7 +92,7 @@ margin: 44px 0;
         margin-bottom: 5px;
     }
     &__content-link {
-        display: block;
+        display: inline-block;
         @extend %description;
         margin-top: 16px;
     }
