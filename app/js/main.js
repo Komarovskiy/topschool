@@ -1,5 +1,6 @@
-$(function () {
+console.log('gewgoteqweqweqwfewe');
 
+(function () {
     $('header__btn').on('click', function () {
         $('.dropdown').removeClass('dropdown--close');
     });
