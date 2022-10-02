@@ -153,7 +153,15 @@
         margin-top: 16px;
     }
 }
-
-// display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
+.main__top {
+    color: #ffffff;
+    min-height: 480px;
+    background: url(../images/bg-figures.png) 27% 58%/50% no-repeat, url(../images/bg-left.jpg) 0 0/54% no-repeat, url('../images/image-bg.jpg') 0 0/100% auto no-repeat;
+    &-text {
+        height: 100%
+    }
+    &h1, h2, {
+        @extend %title-font;
+        padding: 20px
+    }
+}
